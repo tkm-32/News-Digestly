@@ -19,6 +19,7 @@
 ### 要約モデルについて
 - livedoorの3行要約データセットを利用(約7000件取得)
 #### モデルの性能評価
+- 事前学習モデル: sonoisa/t5-base-japanese
 - 学習データ : テストデータ = 8 : 2
 - 精度評価(ROUGE値，BERTScore)
     | | ROUGE-1 | ROUGE-2 | ROUGE-L | BERT-Score |
