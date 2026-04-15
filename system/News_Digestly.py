@@ -45,7 +45,7 @@ def display_top10_news(news_data, keyword_data, genre=None):
         start_of_week, end_of_week = get_week_range(selected_date)
         st.write(f"#### 【期間】 {start_of_week.strftime('%Y-%m-%d')} ～ {end_of_week.strftime('%Y-%m-%d')}")
         st.write("#### ●共起ネットワーク図")
-        st.image(f"../KHCorder_csvファイル/{selected_date_str}.png")
+        st.image(f"../KHCorder_images/{selected_date_str}.png")
         st.write("---")
         st.write("### ●トップ10ニュース")
         for _, row in filtered_news.iterrows():
@@ -128,7 +128,7 @@ st.title("📰News Digestly📰")
 
 # データの読み込み
 news_data = load_data("news.csv")
-keyword_data = load_data("../keywords.csv")
+keyword_data = load_data("../keyword_extraction/keywords.csv")
 
 with st.sidebar:
     page = st.radio("ジャンル", ["全て", "社会", "政治", "経済", "国際", "スポーツ", "エンタメ"])
