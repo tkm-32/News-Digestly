@@ -79,4 +79,4 @@ project_root/
 
 以下の画面のように、選択した週のトップ10ニュースと、KHCoderによる共起ネットワーク図を表示します。キーワードにカーソルを合わせると、詳細な解説がツールチップで表示されます。
 
-![システムの画面](News_Digestlyの実行画面.png)
+![alt text](execition_screen.png)
